@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignResponse">
+    <DisplayName>AssignResponse</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">{
+          "appName":"{developer.app.name}",
+          "apiproductName":"{apiproduct.name}",
+          "apiproxyName":"{apiproxy.name}",
+          "externalClientId":"{client_id}", 
+          "externalAccessToken":"{access_token}", 
+          "externalExpiryTime":"{expires_in}"
+} 
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

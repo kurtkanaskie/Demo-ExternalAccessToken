@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ExtractExternalToken">
+    <DisplayName>ExtractExternalToken</DisplayName>
+    <Properties/>
+    <JSONPayload>
+        <Variable name="externalAccessToken" type="string">
+            <JSONPath>$.access_token</JSONPath>
+        </Variable>
+        <Variable name="externalExpiresIn" type="string">
+            <JSONPath>$.expires_in</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">validationResponse</Source>
+</ExtractVariables>

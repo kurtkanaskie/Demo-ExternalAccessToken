@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="Demo-ExternalAccessToken">
+    <Basepaths>/demo-externalaccesstoken</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1505500281964</CreatedAt>
+    <CreatedBy>kurtkanaskie@google.com</CreatedBy>
+    <Description>Get access token from BaaS and use in Edge - for distribution, change YOURBAASORG in the service callout</Description>
+    <DisplayName>Demo-ExternalAccessToken</DisplayName>
+    <LastModifiedAt>1505500326459</LastModifiedAt>
+    <LastModifiedBy>kurtkanaskie@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignExternalAuthorizationHeader</Policy>
+        <Policy>AssignExternalOAuthVariables</Policy>
+        <Policy>AssignResponse</Policy>
+        <Policy>ExtractExternalToken</Policy>
+        <Policy>GenerateAccessTokenBaaS</Policy>
+        <Policy>GenerateExternalAccessToken</Policy>
+        <Policy>remove-header-authorization</Policy>
+        <Policy>verify-oauth-v2-access-token</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

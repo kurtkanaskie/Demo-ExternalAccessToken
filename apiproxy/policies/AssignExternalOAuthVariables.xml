@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignExternalOAuthVariables">
+    <DisplayName>AssignExternalOAuthVariables</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>oauth_external_authorization_status</Name>
+        <Value>true</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>grant_type</Name>
+        <Value>client_credentials</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>externalClientId</Name>
+        <Ref>request.header.client_id</Ref>
+    </AssignVariable>
+    <Set>
+        <FormParams>
+            <FormParam name="client_id">{externalClientId}</FormParam>
+        </FormParams>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

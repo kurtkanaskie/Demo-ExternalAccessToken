@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="GenerateAccessTokenBaaS">
+    <DisplayName>GenerateAccessTokenBaaS</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="myRequest">
+        <Add>
+            <FormParams>
+                <FormParam name="grant_type">password</FormParam>
+                <FormParam name="username">demouser</FormParam>
+                <FormParam name="password">demouser1</FormParam>
+            </FormParams>
+            <Headers>
+                <Header name="Content-Type">application/json</Header>
+            </Headers>
+            <Verb>POST</Verb>
+        </Add>
+    </Request>
+    <Response>validationResponse</Response>
+    <HTTPTargetConnection>
+        <URL>https://apibaas-trial.apigee.net/YOURBAASORG/sandbox/token</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

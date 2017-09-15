@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="GenerateExternalAccessToken">
+    <DisplayName>GenerateExternalAccessToken</DisplayName>
+    <Operation>GenerateAccessToken</Operation>
+    <ClientId>externalClientId</ClientId>
+    <GrantType>grant_type</GrantType>
+    <ExternalAccessToken>externalAccessToken</ExternalAccessToken>
+    <ExternalAuthorization>true</ExternalAuthorization>
+    <ExpiresIn ref="externalExpiresIn">10</ExpiresIn>
+    <ReuseRefreshToken>false</ReuseRefreshToken>
+    <StoreToken>true</StoreToken>
+    <SupportedGrantTypes>
+        <GrantType>client_credentials</GrantType>
+    </SupportedGrantTypes>
+    <Tokens/>
+</OAuthV2>
